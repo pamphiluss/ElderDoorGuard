@@ -32,7 +32,7 @@
 
         <activity android:name="com.syd.elderguard.ui.activity.GuideActivity"/>
         <activity android:name="com.syd.elderguard.ui.activity.MainActivity"/>
-        <activity android:name="com.syd.elderguard.ui.activity.AddAccountActivity"/>
+        <activity android:name="com.syd.elderguard.ui.activity.AddFace"/>
         <activity android:name="com.syd.elderguard.ui.activity.EventListActivity"/>
         <activity android:name="com.syd.elderguard.ui.activity.RelationListActivity"/>
         <activity android:name="com.syd.elderguard.ui.activity.SearchActivity"/>

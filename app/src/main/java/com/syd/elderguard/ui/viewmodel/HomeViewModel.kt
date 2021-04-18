@@ -52,10 +52,10 @@ class HomeViewModel constructor(
     fun initBaseData() {
         TaskScheduler.execute {
             //关系表没有数据，初始化默认本地数据
-            var posters = relationshipDao.getRelationshipList()
+            val posters = relationshipDao.getRelationshipList()
 
             if (posters.isEmpty()) {
-                var list: MutableList<Relationship> = ArrayList()
+                val list: MutableList<Relationship> = ArrayList()
                 list.add(Relationship("亲戚"))
                 list.add(Relationship("朋友"))
                 list.add(Relationship("同学"))
@@ -66,10 +66,10 @@ class HomeViewModel constructor(
                 relationshipDao.insertRelationshipList(list)
             }
 
-            var eventList = eventDao.getEventList();
+            val eventList = eventDao.getEventList();
             if (eventList.isEmpty()) {
                 //插入本地数据库
-                var list: MutableList<Event> = ArrayList()
+                val list: MutableList<Event> = ArrayList()
                 list.add(Event("参加婚礼"))
                 list.add(Event("参加葬礼"))
                 list.add(Event("宝宝出生"))

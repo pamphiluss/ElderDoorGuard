@@ -9,9 +9,7 @@ import com.just.agentweb.AgentWebUIControllerImplBase;
 
 public class UIController extends AgentWebUIControllerImplBase {
 
-    private Activity mActivity;
     public UIController(Activity activity){
-        this.mActivity=activity;
     }
 
     @Override

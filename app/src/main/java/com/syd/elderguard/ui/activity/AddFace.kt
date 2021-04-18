@@ -28,9 +28,9 @@ import java.util.*
 
 
 /**
- * 添加记账
+ * 添加人脸数据
  */
-class AddAccountActivity : BaseActivity(), View.OnClickListener {
+class AddFace : BaseActivity(), View.OnClickListener {
 
     //添加类型 1：支出  2：收入
     private var accountType = 1
@@ -181,7 +181,7 @@ class AddAccountActivity : BaseActivity(), View.OnClickListener {
     private fun onChoiceDate() {
         MaterialDialog(this).show {
             datePicker { _, date ->
-                this@AddAccountActivity.txvPartInDate.text = "${date.year}-${date.month+1}-${date.dayOfMonth}"
+                this@AddFace.txvPartInDate.text = "${date.year}-${date.month+1}-${date.dayOfMonth}"
                 recordDate = date.timeInMillis
             }
         }

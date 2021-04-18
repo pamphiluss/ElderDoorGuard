@@ -26,7 +26,7 @@ import com.syd.elderguard.R
 import com.syd.elderguard.extensions.getCurrentDate
 import com.syd.elderguard.extensions.getToday_Chinaname
 import com.syd.elderguard.extensions.toPx
-import com.syd.elderguard.ui.activity.AddAccountActivity
+import com.syd.elderguard.ui.activity.AddFace
 import com.syd.elderguard.ui.activity.SearchActivity
 import com.syd.elderguard.ui.adapter.HomeAdapter
 import com.syd.elderguard.ui.dialog.ActionSheetDialog
@@ -58,6 +58,7 @@ class HomeFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -65,7 +66,7 @@ class HomeFragment : Fragment() {
         homeAdapter = HomeAdapter();
         homeAdapter.setOnItemClickListener { _, _, position ->
             val account = homeAdapter.data[position]
-            startActivity(Intent(activity, AddAccountActivity::class.java)
+            startActivity(Intent(activity, AddFace::class.java)
                 .putExtra(Constant.BUNDLE_ACCOUNT_MANAGER, account))
         }
         activity?.let { BottomLine(it) }?.let { rvHomeList.addItemDecoration(it) }
@@ -87,6 +88,7 @@ class HomeFragment : Fragment() {
         updateCover()
     }
 
+    @RequiresApi(Build.VERSION_CODES.M)
     private fun dataObserver() {
         homeViewModel.accoutListLiveData.observe(viewLifecycleOwner, Observer { list ->
             homeAdapter.setNewData(list)

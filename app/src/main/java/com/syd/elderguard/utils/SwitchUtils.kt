@@ -21,8 +21,8 @@ fun toMain(activity: Activity) {
 }
 
 
-fun toAddAccount(activity: Activity, accountType: Int) {
-    val intent = Intent(activity, AddAccountActivity().javaClass)
+fun toAddFace(activity: Activity, accountType: Int) {
+    val intent = Intent(activity, AddFace().javaClass)
     intent.putExtra(Constant.BUNDLE_ACCOUNT_TYPE, accountType);
     activity.startActivity(intent)
 }

@@ -7,7 +7,7 @@ import com.syd.elderguard.ui.fragment.DashboardFragment
 import com.syd.elderguard.ui.fragment.HomeFragment
 import com.syd.elderguard.ui.fragment.MineFragment
 import com.syd.elderguard.ui.fragment.RelationshipFragment
-import com.syd.elderguard.utils.toAddAccount
+import com.syd.elderguard.utils.toAddFace
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.system.exitProcess
 
@@ -116,11 +116,11 @@ class MainActivity : BaseActivity() {
             .addSheetItem("添加人脸数据",
                 ActionSheetDialog.SheetItemColor.Red
             ) {
-                toAddAccount(this@MainActivity, 1)
+                toAddFace(this@MainActivity, 1)
             }.addSheetItem("查看已有人脸库",
                 ActionSheetDialog.SheetItemColor.Red
             ) {
-                toAddAccount(this@MainActivity,2)
+                toAddFace(this@MainActivity,2)
             }.show()
     }
 

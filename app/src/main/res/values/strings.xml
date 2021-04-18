@@ -29,8 +29,8 @@
     <string name="lable_ok">确定</string>
     <string name="lable_i_know">知道了</string>
     <string name="lable_custom_add">自定义添加</string>
-    <string name="lable_count_asc">金额升序</string>
-    <string name="lable_count_desc">金额降序</string>
+    <string name="lable_count_asc">次数升序</string>
+    <string name="lable_count_desc">次数降序</string>
     <string name="lable_time_asc">时间升序</string>
     <string name="lable_time_desc">时间降序</string>
 
