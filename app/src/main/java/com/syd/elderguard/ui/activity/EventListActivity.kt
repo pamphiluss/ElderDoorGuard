@@ -43,7 +43,7 @@ class EventListActivity : BaseActivity() {
                 Intent().putExtra(Constant.BUNDLE_EVENT, eventAdapter.getItem(position)))
             finish()
         }
-        eventAdapter.setOnItemLongClickListener{ madapter, view, position ->
+        eventAdapter.setOnItemLongClickListener{ _, _, position ->
             val event = eventAdapter.getItem(position)
             event?.let {
                 if (event.id<12) return@let true

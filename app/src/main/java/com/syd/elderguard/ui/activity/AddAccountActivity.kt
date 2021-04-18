@@ -86,7 +86,7 @@ class AddAccountActivity : BaseActivity(), View.OnClickListener {
         }
 
         if (isEdit) {
-            val itemDelete = menu!!.findItem(R.id.item_delete_account)
+            val itemDelete = menu.findItem(R.id.item_delete_account)
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                 itemDelete.title = Html.fromHtml("<font color='#606060'>删除</font>", Html.FROM_HTML_MODE_LEGACY)
             } else {
@@ -164,8 +164,8 @@ class AddAccountActivity : BaseActivity(), View.OnClickListener {
         edtAccountPeople.text = accountManager.people.toEditable()
         txvRelationshipName.text= accountManager.relationshipName
         txvPartInDate.text = Date().transToString(accountManager.date)
-        edtAccountPlace.text = accountManager.place?.toEditable()
-        edtAccountRemark.text = accountManager.remark?.toEditable()
+        edtAccountPlace.text = accountManager.place.toEditable()
+        edtAccountRemark.text = accountManager.remark.toEditable()
     }
 
     private fun onChoiceContact() {

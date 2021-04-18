@@ -33,7 +33,7 @@ class SearchActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         rvSearchList.layoutManager = LinearLayoutManager(this)
         homeAdapter = HomeAdapter();
-        homeAdapter.setOnItemClickListener { _, _, position ->
+        homeAdapter.setOnItemClickListener { _, _, _ ->
 
         }
         rvSearchList.addItemDecoration(DividerItemDecoration(this))

@@ -1,2 +1,2 @@
-rootProject.name='Favor'
+rootProject.name='ElderDoorGuard'
 include ':app'

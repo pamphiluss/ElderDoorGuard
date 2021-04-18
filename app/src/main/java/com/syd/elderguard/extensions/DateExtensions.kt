@@ -33,7 +33,7 @@ fun Date.getToday_Chinaname(): String {
 }
 
 //获取当前日期
-inline fun Date.getToday(): String {
+fun Date.getToday(): String {
     //需要得到的格式
     var sdf: Format = SimpleDateFormat("yyyy-MM-dd")
     return sdf.format(data)
@@ -51,7 +51,7 @@ fun Date.getCurrentTime(): String {
     return sdf.format(data)
 }
 
-inline fun Date.getCurrentYear(): String {
+fun Date.getCurrentYear(): String {
 //需要得到的格式
     var sdf: Format = SimpleDateFormat("yyyy")
     return sdf.format(data)

@@ -94,7 +94,6 @@ class HomeViewModel constructor(
             .build()
             .getAsJSONObject(object : JSONObjectRequestListener {
                 override fun onResponse(response: JSONObject) {
-                    if (response == null) return
                     val title = response.optString("txt")
                     soupLiveData.postValue(title)
                     MMKV.defaultMMKV().encode(Constant.SP_DAY_SOUP, title)

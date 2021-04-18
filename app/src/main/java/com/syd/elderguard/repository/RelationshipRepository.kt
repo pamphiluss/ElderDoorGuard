@@ -12,9 +12,9 @@ class RelationshipRepository constructor(
 
     override var isLoading: Boolean = false
 
-    suspend fun loadRelationshipList(error: (String) -> Unit) = withContext(Dispatchers.IO) {
+    suspend fun loadRelationshipList() = withContext(Dispatchers.IO) {
         val liveData = MutableLiveData<List<RelationshipManager>>()
-        var relationshipManagerList = relationshipDao.getRelationshipManagerList()
+        val relationshipManagerList = relationshipDao.getRelationshipManagerList()
         //所有的管理列表
         val allManagerList = ArrayList<RelationshipManager>()
         //获取到所有的关系列表

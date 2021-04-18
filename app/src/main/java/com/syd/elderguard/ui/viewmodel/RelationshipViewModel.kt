@@ -27,7 +27,7 @@ class RelationshipViewModel constructor(
     init {
         this.posterListLiveData = this.posterFetchingLiveData.switchMap {
             launchOnViewModelScope {
-                this.relationshipRepository.loadRelationshipList { this.toastLiveData.postValue(it) }
+                this.relationshipRepository.loadRelationshipList()
             }
         }
     }

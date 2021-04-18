@@ -49,7 +49,7 @@ class CoverActivity : BaseActivity(), View.OnClickListener {
             Uri.fromFile(file)
         } else {
             //通过FileProvider创建一个content类型的Uri(android 7.0需要这样的方法跨应用访问)
-            FileProvider.getUriForFile(BaseApplication.inst,"$packageName.fileprovider", file!!)
+            FileProvider.getUriForFile(BaseApplication.inst,"$packageName.fileprovider", file)
         }
 
         coverAdapter = CoverAdapter()
@@ -103,7 +103,7 @@ class CoverActivity : BaseActivity(), View.OnClickListener {
     }
 
     private fun uploadAvatarFromPhoto() {
-        val path = file!!.path
+        val path = file.path
         Glide.with(this).load(path).into(imvHomeThemeImage)
         MMKV.defaultMMKV().encode(Constant.SP_COVER_CUSTOM_PATH, path)
         MMKV.defaultMMKV().encode(Constant.SP_COVER_INDEX, "-1")

@@ -248,7 +248,6 @@ class HomeFragment : Fragment() {
      * 更新封面
      */
     private fun updateCover() {
-        if (imvHomeThemeImage == null) return
 
         //显示预览图
         val coverIndex = MMKV.defaultMMKV().decodeString(Constant.SP_COVER_INDEX, "5")
@@ -257,7 +256,7 @@ class HomeFragment : Fragment() {
             Glide.with(this).load(customPath).into(imvHomeThemeImage)
             return
         }
-        var drawable = Utils.getDrawableResource(activity, "ic_header_theme_${coverIndex}")
+        val drawable = Utils.getDrawableResource(activity, "ic_header_theme_${coverIndex}")
         imvHomeThemeImage.setImageResource(drawable)
     }
     /**

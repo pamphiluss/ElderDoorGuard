@@ -97,9 +97,6 @@ class UserInfoActivity : BaseActivity(), View.OnClickListener {
         user.nickName = nickName
         user.update(object : UpdateListener() {
             override fun done(e: BmobException) {
-                if (e == null) {
-                    showLongToast("更新成功")
-                }
             }
         })
     }
@@ -130,7 +127,7 @@ class UserInfoActivity : BaseActivity(), View.OnClickListener {
     }
 
     private fun uploadAvatarFromPhoto() {
-        val path = file!!.path
+        val path = file.path
         val cover = FileUtil.getSmallBitmap(this, path)
         Glide.with(this).load(cover).into(imvHeader!!)
         val bmobFile = BmobFile(file)
@@ -213,15 +210,13 @@ class UserInfoActivity : BaseActivity(), View.OnClickListener {
             Uri.fromFile(file)
         } else {
             //通过FileProvider创建一个content类型的Uri(android 7.0需要这样的方法跨应用访问)
-            FileProvider.getUriForFile(BaseApplication.inst,"$packageName.fileprovider", file!!)
+            FileProvider.getUriForFile(BaseApplication.inst,"$packageName.fileprovider", file)
         }
         val user: User = User.getCurrentUser(User::class.java)
         txvNickname?.text = user.nickName
         if (user.avatar != null) {
             val bmobFile: BmobFile = user.avatar
-            if (bmobFile != null) {
-                Glide.with(this).load(bmobFile.fileUrl).into(imvHeader!!)
-            }
+            Glide.with(this).load(bmobFile.fileUrl).into(imvHeader!!)
         }
 
     }

@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.qianwen:update-app:3.5.2@aar">
     <CLASSES>
-      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/462a21d94f130422e1e4954e910be935/jetified-update-app-3.5.2/jars/classes.jar!/" />
-      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/462a21d94f130422e1e4954e910be935/jetified-update-app-3.5.2/res" />
-      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/462a21d94f130422e1e4954e910be935/jetified-update-app-3.5.2/AndroidManifest.xml" />
+      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/aa07b02e41cf982e0130dde397f1d8c3/jetified-update-app-3.5.2/res" />
+      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/aa07b02e41cf982e0130dde397f1d8c3/jetified-update-app-3.5.2/AndroidManifest.xml" />
+      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/aa07b02e41cf982e0130dde397f1d8c3/jetified-update-app-3.5.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Android_Studio_Temp/.gradle/caches/modules-2/files-2.1/com.qianwen/update-app/3.5.2/7d2811671955a22f418038da03a60b04d2d4dad9/update-app-3.5.2-javadoc.jar!/" />

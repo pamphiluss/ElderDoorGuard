@@ -31,12 +31,12 @@ class RelationshipFragment : BaseFragment() {
 
         rvRelationshipManager.layoutManager = LinearLayoutManager(activity)
         relationshipManagerAdapter = RelationshipManagerAdapter();
-        relationshipManagerAdapter.setOnItemClickListener { _, _, position ->
+        relationshipManagerAdapter.setOnItemClickListener { _, _, _ ->
 
         }
         activity?.let { BottomLine(it) }?.let { rvRelationshipManager.addItemDecoration(it) }
         rvRelationshipManager.adapter = relationshipManagerAdapter
-        relationshipManagerAdapter.setOnItemLongClickListener { adapter, view, position ->
+        relationshipManagerAdapter.setOnItemLongClickListener { _, _, position ->
             val relationshipManager = relationshipManagerAdapter.data[position]
             if (relationshipManager.relationshipId <=6) return@setOnItemLongClickListener true
             showDeleteRelationshipDialog(relationshipManager)
@@ -110,7 +110,7 @@ class RelationshipFragment : BaseFragment() {
         activity?.let {
             MaterialDialog(it).show {
                 title(R.string.lable_custom_add)
-                input(maxLength = 8, hintRes = R.string.hint_relation_name) { dialog, text ->
+                input(maxLength = 8, hintRes = R.string.hint_relation_name) { _, text ->
                     relationshipViewModel.addCustomRelationship(text.toString())
                 }
                 positiveButton(R.string.lable_ok)

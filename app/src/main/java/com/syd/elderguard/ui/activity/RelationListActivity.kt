@@ -48,7 +48,7 @@ class RelationListActivity : BaseActivity() {
         }
 
         relationshipListViewModel.eventListLiveData.observe(this, Observer {
-            relationshipAdapter?.setNewData(it)
+            relationshipAdapter.setNewData(it)
         })
 
         relationshipListViewModel.toastLiveData.observe(this, Observer {
@@ -77,7 +77,7 @@ class RelationListActivity : BaseActivity() {
     private fun showAddRelationshipDialog() {
         MaterialDialog(this).show {
             title(R.string.lable_custom_add)
-            input(maxLength = 8, hintRes = R.string.hint_relation_name) { dialog, text ->
+            input(maxLength = 8, hintRes = R.string.hint_relation_name) { _, text ->
                 relationshipListViewModel.addCustomRelationship(text.toString())
             }
             positiveButton(R.string.lable_ok)

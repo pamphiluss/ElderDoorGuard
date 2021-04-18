@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.dyhdyh.support:count-down-timer:1.0.2@aar">
     <CLASSES>
-      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/c5bc98c3f756b5b4614fc1f6e7142729/jetified-count-down-timer-1.0.2/jars/classes.jar!/" />
-      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/c5bc98c3f756b5b4614fc1f6e7142729/jetified-count-down-timer-1.0.2/res" />
-      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/c5bc98c3f756b5b4614fc1f6e7142729/jetified-count-down-timer-1.0.2/AndroidManifest.xml" />
+      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/6e59049cbf05509184a516e6f515cd3c/jetified-count-down-timer-1.0.2/res" />
+      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/6e59049cbf05509184a516e6f515cd3c/jetified-count-down-timer-1.0.2/AndroidManifest.xml" />
+      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/6e59049cbf05509184a516e6f515cd3c/jetified-count-down-timer-1.0.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Android_Studio_Temp/.gradle/caches/modules-2/files-2.1/com.dyhdyh.support/count-down-timer/1.0.2/9f3769c1fee65279f03be7649ec5241b926410c7/count-down-timer-1.0.2-javadoc.jar!/" />

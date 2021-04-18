@@ -57,7 +57,7 @@ class TodoListActivity : BaseActivity() {
 
         rvTodoList.addItemDecoration(BottomLine(this))
         rvTodoList.adapter = todoListAdapter
-        todoListAdapter.setOnItemLongClickListener { adapter, view, position ->
+        todoListAdapter.setOnItemLongClickListener { _, _, position ->
             val todo = todoListAdapter.data[position]
             AndPermission.with(this)
                 .runtime()

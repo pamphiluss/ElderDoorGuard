@@ -1,10 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: :bmob-sdk-3.7.6-x:@aar">
     <CLASSES>
-      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/4141f81af1040df4bc0087c696443030/jetified-bmob-sdk-3.7.6-x/jars/classes.jar!/" />
-      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/4141f81af1040df4bc0087c696443030/jetified-bmob-sdk-3.7.6-x/res" />
-      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/4141f81af1040df4bc0087c696443030/jetified-bmob-sdk-3.7.6-x/AndroidManifest.xml" />
-      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/4141f81af1040df4bc0087c696443030/jetified-bmob-sdk-3.7.6-x/jars/libs/BmobSDK_3.7.6-x_20200228.jar!/" />
+      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/7fa5c9d5386b913f3b19b08e5497ce2e/jetified-bmob-sdk-3.7.6-x/jars/libs/BmobSDK_3.7.6-x_20200228.jar!/" />
+      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/7fa5c9d5386b913f3b19b08e5497ce2e/jetified-bmob-sdk-3.7.6-x/AndroidManifest.xml" />
+      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/7fa5c9d5386b913f3b19b08e5497ce2e/jetified-bmob-sdk-3.7.6-x/res" />
+      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/7fa5c9d5386b913f3b19b08e5497ce2e/jetified-bmob-sdk-3.7.6-x/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

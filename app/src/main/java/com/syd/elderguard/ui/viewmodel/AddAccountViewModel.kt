@@ -24,7 +24,7 @@ class AddAccountViewModel constructor(
             return
         }
 
-        if (event == null || event.name.isEmpty()) {
+        if (event.name.isEmpty()) {
             toastLiveData.postValue("请选择事件")
             return
         }
@@ -34,7 +34,7 @@ class AddAccountViewModel constructor(
             return
         }
 
-        if (relationship == null || relationship.name.isEmpty()) {
+        if (relationship.name.isEmpty()) {
             toastLiveData.postValue("请输入关系")
             return
         }
