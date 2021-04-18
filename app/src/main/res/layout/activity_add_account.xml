@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_bar_height"
+        android:background="@android:color/white" />
+
+    <include layout="@layout/include_toolbar"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtAccountCount"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:maxLength="9"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:background="@android:color/white"
+            android:hint="@string/hint_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txvEventName"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/note"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="14sp"
+            android:hint="@string/hint_event"
+            android:textColor="@color/common_text_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtAccountPeople"
+                android:gravity="center_vertical"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/ic_man"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:maxLength="6"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:background="@android:color/white"
+                android:hint="@string/hint_people"
+                android:textColor="@color/common_text_black"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txvContactChoice"
+                android:textSize="14sp"
+                android:textColor="@color/common_red"
+                android:text="通讯录"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/txvRelationshipName"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/xin"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="14sp"
+            android:hint="@string/hint_relationship"
+            android:textColor="@color/common_text_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/txvPartInDate"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/time"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="14sp"
+            android:hint="@string/hint_date"
+            android:textColor="@color/common_text_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <EditText
+            android:id="@+id/edtAccountPlace"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/location"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:maxLength="50"
+            android:lines="1"
+            android:textSize="14sp"
+            android:inputType="textMultiLine"
+            android:background="@android:color/white"
+            android:hint="@string/hint_place"
+            android:textColor="@color/common_text_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@color/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <EditText
+            android:id="@+id/edtAccountRemark"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/ic_remark"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:maxLength="100"
+            android:textSize="14sp"
+            android:inputType="textMultiLine"
+            android:background="@android:color/white"
+            android:textColor="@color/common_text_black"
+            android:hint="@string/hint_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

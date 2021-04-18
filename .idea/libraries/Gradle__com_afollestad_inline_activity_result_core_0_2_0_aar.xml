@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.afollestad.inline-activity-result:core:0.2.0@aar">
+    <CLASSES>
+      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/ecd8997a6a70fa03ced3635fc32b23c3/jetified-core-0.2.0/jars/classes.jar!/" />
+      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/ecd8997a6a70fa03ced3635fc32b23c3/jetified-core-0.2.0/res" />
+      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/ecd8997a6a70fa03ced3635fc32b23c3/jetified-core-0.2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/modules-2/files-2.1/com.afollestad.inline-activity-result/core/0.2.0/899ab2423f37faef6e0ca27ccbc4fdd935f64cd2/core-0.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/modules-2/files-2.1/com.afollestad.inline-activity-result/core/0.2.0/d6942d40d80530fbc3987db9e6f9d69f018b00fe/core-0.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

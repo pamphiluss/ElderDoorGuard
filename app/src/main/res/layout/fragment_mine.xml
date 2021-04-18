@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/common_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_status_bar"/>
+
+    <include layout="@layout/include_toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/relUserInfo"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/common_text_black"
+            android:text="个人信息"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imvUserArrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.syd.elderguard.widget.NiceImageView
+            app:is_circle="true"
+            android:id="@+id/imvAvatar"
+            android:layout_toLeftOf="@+id/imvUserArrow"
+            android:src="@drawable/ic_unlogin_avatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rlSyncData"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/common_text_black"
+            android:text="数据云端保存"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imvSynArrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            app:lottie_fileName="sync.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="false"
+            android:visibility="gone"
+            android:id="@+id/syncDataCloud"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imvSynArrow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/txvTodo"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/arrow_right"
+        android:text="提醒事项"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/common_text_black"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/txvCoverSetting"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/arrow_right"
+        android:text="封面设置"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/common_text_black"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/txvContactUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:drawableRight="@drawable/arrow_right"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="联系开发者"
+        android:textColor="@color/common_text_black"
+        android:textSize="14sp" />
+
+    <View
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/txvAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:drawableRight="@drawable/arrow_right"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="关于我们"
+        android:textColor="@color/common_text_black"
+        android:textSize="14sp" />
+
+</LinearLayout>

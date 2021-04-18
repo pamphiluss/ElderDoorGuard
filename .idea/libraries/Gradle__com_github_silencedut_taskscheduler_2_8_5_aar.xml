@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.silencedut:taskscheduler:2.8.5@aar">
+    <CLASSES>
+      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/ff46d7a5b84655bc17e9e210de96be4e/jetified-taskscheduler-2.8.5/jars/classes.jar!/" />
+      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/ff46d7a5b84655bc17e9e210de96be4e/jetified-taskscheduler-2.8.5/res" />
+      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/ff46d7a5b84655bc17e9e210de96be4e/jetified-taskscheduler-2.8.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/modules-2/files-2.1/com.github.silencedut/taskscheduler/2.8.5/846292df671a8eeb59d451a8f13b0f95352f407e/taskscheduler-2.8.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

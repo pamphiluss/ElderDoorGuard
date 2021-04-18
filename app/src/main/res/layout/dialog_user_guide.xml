@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="个人信息保护指引"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:text="1.我们遵循隐私政策相关条例，不会强制的收集手机用户信息。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:text="2.数据存储、设备信息等权限开关默认都是关闭的，在需要使用的时候会弹窗申请，用户选择是否开启。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/txvUserToDetail"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:text="可点击隐私政策和用户协议查看完成内容。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnUserRefuse"
+            android:background="@drawable/btn_gray"
+            android:layout_margin="10dp"
+            android:text="拒绝"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:id="@+id/btnUserAgree"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_blue"
+            android:layout_margin="10dp"
+            android:text="同意"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_scale="0.4"
+        app:lottie_fileName="bar_graph.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="90dp"
+        android:layout_height="90dp"/>
+
+    <TextView
+        android:id="@+id/txvAppDesc"
+        android:textSize="14sp"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/lable_app_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="6dp"
+        android:layout_above="@id/txvAppDesc"
+        android:id="@+id/txvAppName"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

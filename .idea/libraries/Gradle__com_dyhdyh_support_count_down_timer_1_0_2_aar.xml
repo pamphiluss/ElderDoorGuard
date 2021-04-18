@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.dyhdyh.support:count-down-timer:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/c5bc98c3f756b5b4614fc1f6e7142729/jetified-count-down-timer-1.0.2/jars/classes.jar!/" />
+      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/c5bc98c3f756b5b4614fc1f6e7142729/jetified-count-down-timer-1.0.2/res" />
+      <root url="file://D:/Android_Studio_Temp/.gradle/caches/transforms-2/files-2.1/c5bc98c3f756b5b4614fc1f6e7142729/jetified-count-down-timer-1.0.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/modules-2/files-2.1/com.dyhdyh.support/count-down-timer/1.0.2/9f3769c1fee65279f03be7649ec5241b926410c7/count-down-timer-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/Android_Studio_Temp/.gradle/caches/modules-2/files-2.1/com.dyhdyh.support/count-down-timer/1.0.2/1ed6ef15264b95e42e1f7fdbbd337f50d8114b75/count-down-timer-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

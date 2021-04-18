@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/common_background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_status_bar"/>
+
+    <include layout="@layout/include_toolbar"/>
+
+    <TextView
+        android:padding="15dp"
+        android:textColor="@color/common_text_black"
+        android:textSize="14sp"
+        android:text="我是独立开发者快乐的天空，以下为个人开发的作品，目前均可在酷安应用市场下载。我的原则是保持简单、追求极致。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rlChanApp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imvChanIcon"
+            android:src="@drawable/app_chan_mode"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:id="@+id/txvAppChan"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/common_text_black"
+            android:layout_toRightOf="@+id/imvChanIcon"
+            android:text="禅修模式"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/common_text_gray"
+            android:layout_toRightOf="@+id/imvChanIcon"
+            android:layout_below="@+id/txvAppChan"
+            android:text="专注自律，克服手机依赖的好助手"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlChunApp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imvChunIcon"
+            android:src="@drawable/app_chun_wallpaper"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:id="@+id/txvAppChun"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/common_text_black"
+            android:layout_toRightOf="@+id/imvChunIcon"
+            android:text="纯纯壁纸"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/common_text_gray"
+            android:layout_toRightOf="@+id/imvChunIcon"
+            android:layout_below="@+id/txvAppChun"
+            android:text="一款制作纯色、渐变壁纸工具"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

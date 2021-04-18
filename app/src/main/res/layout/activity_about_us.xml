@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/common_background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linAboutTitle"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/include_status_bar"/>
+
+        <include layout="@layout/include_toolbar"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imvAppIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linAboutTitle"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/common_text_black"
+        android:layout_below="@+id/imvAppIcon"
+        android:text="@string/app_name"
+        android:id="@+id/txvAppNameVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txvHistoryVersionList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvAppNameVersion"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:text="个人博客：www.striveyadong.com" />
+
+    <TextView
+        android:id="@+id/txvAppDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvHistoryVersionList"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="老人卫士是一款应用于控制门禁设备的APP，其主要功能是获取门禁设备的人脸数据，对危机情况及时通知，保障空巢老人安全。" />
+
+    <View
+        android:id="@+id/view_about_divider"
+        android:layout_centerHorizontal="true"
+        android:background="@color/common_text_gray"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="1dp"
+        android:layout_height="14dp"/>
+
+    <TextView
+        android:id="@+id/txvUserAgreement"
+        android:textSize="12sp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/common_text_gray"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/view_about_divider"
+        android:text="用户协议"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txvUserPrivacy"
+        android:textSize="12sp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/common_text_gray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/view_about_divider"
+        android:text="隐私政策"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

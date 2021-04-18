@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">老人卫士</string>
+
+    <string name="title_home">首页</string>
+    <string name="title_relationship">关系</string>
+    <string name="title_mine">我的</string>
+    <string name="title_relationship_manager">关系管理</string>
+    <string name="title_account_add">添加</string>
+    <string name="title_dashboard">统计</string>
+    <string name="title_notifications">我的</string>
+    <string name="title_add_account_out">添加人脸</string>
+    <string name="title_add_account_in">删除人脸</string>
+    <string name="title_event">事件</string>
+    <string name="title_search" />
+    <string name="title_take_back">陌生人</string>
+    <string name="title_send_out">熟人</string>
+    <string name="title_empty" />
+    <string name="title_user_info">个人信息</string>
+    <string name="title_todo_list">提醒事项</string>
+    <string name="title_todo_add">添加事项</string>
+    <string name="title_todo_edit">编辑事项</string>
+    <string name="title_about">关于</string>
+    <string name="title_ohter_apps">作者作品</string>
+    <string name="title_contact">通讯录</string>
+    <string name="title_cover_setting">封面设置</string>
+
+    <string name="lable_app_desc">老人的家庭伙伴</string>
+    <string name="lable_cancle">取消</string>
+    <string name="lable_ok">确定</string>
+    <string name="lable_i_know">知道了</string>
+    <string name="lable_custom_add">自定义添加</string>
+    <string name="lable_count_asc">金额升序</string>
+    <string name="lable_count_desc">金额降序</string>
+    <string name="lable_time_asc">时间升序</string>
+    <string name="lable_time_desc">时间降序</string>
+
+    <string name="hint_event_name">事件名</string>
+    <string name="hint_relation_name">关系</string>
+    <string name="hint_count">0.00</string>
+    <string name="hint_event">事件</string>
+    <string name="hint_people">人物</string>
+    <string name="hint_relationship">关系</string>
+    <string name="hint_date">日期</string>
+    <string name="hint_place">地点（选填）</string>
+    <string name="hint_remark">备注（选填）</string>
+    <string name="hint_nickname">昵称</string>
+
+    <string name="dialog_title_sync_data">同步数据</string>
+    <string name="dialog_title_delete_todo">删除事项</string>
+    <string name="dialog_title_modify_nickname">修改昵称</string>
+    <string name="dialog_title_contact_us">联系开发者</string>
+    <string name="dialog_title_tips">温馨提示</string>
+    <string name="dialog_title_delete_relationship">删除关系</string>
+    <string name="dialog_message_contact_us">QQ:1349619363\n\n邮箱:1349619363@qq.com</string>
+    <string name="dialog_message_delete_relationship">你确定要删除该自定义关系吗？</string>
+    <string name="dialog_message_cannot_delete_relationship">当前关系下有相关记账记录不能直接删除</string>
+    <string name="dialog_message_cannot_delete_event">当前事件下有相关记账记录不能直接删除</string>
+    <string name="dialog_message_sync_data">发现有新数据还没同步到云端，是否同步呢？</string>
+</resources>
