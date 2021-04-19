@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_bar_height"
+        android:background="@android:color/white" />
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="照片"
+                android:textColor="@color/common_text_gray"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/friend_imvHeaderArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right" />
+
+            <com.syd.elderguard.widget.NiceImageView
+                android:id="@+id/friend_imvHeader"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/friend_imvHeaderArrow"
+                android:src="@drawable/ic_avatar_default"
+                app:is_circle="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/friend_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:drawableLeft="@drawable/ic_man"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_name"
+                android:inputType="text"
+                android:maxLength="6"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/common_text_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <EditText
+            android:id="@+id/friend_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/ic_remark"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="性别"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/common_text_black"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/friend_txvRelationshipName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/xin"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_relationship"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/common_text_black"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/friend_txvPartInDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/time"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="出生日期"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/common_text_black"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <EditText
+            android:id="@+id/friend_edtRemark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/ic_remark"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_remark"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/common_text_black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

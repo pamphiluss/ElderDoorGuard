@@ -68,7 +68,7 @@
                 android:textSize="14sp"
                 android:inputType="text"
                 android:background="@android:color/white"
-                android:hint="@string/hint_people"
+                android:hint="@string/hint_name"
                 android:textColor="@color/common_text_black"
                 android:layout_weight="1"
                 android:layout_width="match_parent"

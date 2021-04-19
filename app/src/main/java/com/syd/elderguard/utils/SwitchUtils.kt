@@ -26,6 +26,11 @@ fun toAddFace(activity: Activity, accountType: Int) {
     intent.putExtra(Constant.BUNDLE_ACCOUNT_TYPE, accountType);
     activity.startActivity(intent)
 }
+fun toAddFaceActivity(activity: Activity, type: Int) {
+    val intent = Intent(activity, AddFaceActivity().javaClass)
+    intent.putExtra(Constant.BUNDLE_ACCOUNT_TYPE, type);
+    activity.startActivity(intent)
+}
 
 fun toLogin(activity: Activity) {
     val intent = Intent(activity, LoginActivity().javaClass)

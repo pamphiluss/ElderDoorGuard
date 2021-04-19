@@ -8,6 +8,7 @@ import com.syd.elderguard.ui.fragment.HomeFragment
 import com.syd.elderguard.ui.fragment.MineFragment
 import com.syd.elderguard.ui.fragment.RelationshipFragment
 import com.syd.elderguard.utils.toAddFace
+import com.syd.elderguard.utils.toAddFaceActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.system.exitProcess
 
@@ -121,6 +122,10 @@ class MainActivity : BaseActivity() {
                 ActionSheetDialog.SheetItemColor.Red
             ) {
                 toAddFace(this@MainActivity,2)
+            }.addSheetItem("查看已有人脸库",
+                ActionSheetDialog.SheetItemColor.Red
+            ) {
+                toAddFaceActivity(this@MainActivity,2)
             }.show()
     }
 

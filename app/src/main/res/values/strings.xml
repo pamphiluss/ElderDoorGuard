@@ -8,8 +8,8 @@
     <string name="title_account_add">添加</string>
     <string name="title_dashboard">统计</string>
     <string name="title_notifications">我的</string>
-    <string name="title_add_account_out">添加人脸</string>
-    <string name="title_add_account_in">删除人脸</string>
+    <string name="title_add_face_out">添加人脸</string>
+    <string name="title_add_face_in">删除人脸</string>
     <string name="title_event">事件</string>
     <string name="title_search" />
     <string name="title_take_back">陌生人</string>
@@ -38,7 +38,7 @@
     <string name="hint_relation_name">关系</string>
     <string name="hint_count">0.00</string>
     <string name="hint_event">事件</string>
-    <string name="hint_people">人物</string>
+    <string name="hint_name">姓名</string>
     <string name="hint_relationship">关系</string>
     <string name="hint_date">日期</string>
     <string name="hint_place">地点（选填）</string>
@@ -56,4 +56,5 @@
     <string name="dialog_message_cannot_delete_relationship">当前关系下有相关记账记录不能直接删除</string>
     <string name="dialog_message_cannot_delete_event">当前事件下有相关记账记录不能直接删除</string>
     <string name="dialog_message_sync_data">发现有新数据还没同步到云端，是否同步呢？</string>
+    <string name="Address_book">通讯录</string>
 </resources>

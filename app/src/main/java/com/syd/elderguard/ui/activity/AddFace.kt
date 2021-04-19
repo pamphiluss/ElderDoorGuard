@@ -72,9 +72,9 @@ class AddFace : BaseActivity(), View.OnClickListener {
     }
 
     override fun getToolbarTitleId(): Int {
-        if (accountType == 2) return R.string.title_add_account_in
+        if (accountType == 2) return R.string.title_add_face_in
 
-        return R.string.title_add_account_out
+        return R.string.title_add_face_out
     }
 
     override fun onPrepareOptionsMenu(menu: Menu?): Boolean {
